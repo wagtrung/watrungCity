@@ -199,7 +199,7 @@ border-radius: 3px;
 }
 .tab:hover{
     
-   
+   cursor: pointer;
     background: #bdbdbd2a;
   
 }
