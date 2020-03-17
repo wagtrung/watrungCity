@@ -1,0 +1,227 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  background-color: aquamarine;
+}
+.services{
+  background: #b84d4d;
+  
+}
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
+  padding-bottom: 10px;s
+  margin-top: 40px;
+  text-align: center;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0px;
+  background: #15496b;
+}
+.service{
+  height:200px;
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -9px;
+  padding: 20px;
+  box-sizing:border-box;
+  cursor: pointer;
+  transition: 0.4s;
+  background: #b84d4d
+}
+.service:hover{
+  background: #ddd;
+}
+.service i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.s{
+  height:50px;
+  background: #3498db;
+  overflow: hidden;
+}
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+  
+}
+
+.services-section{
+  background: url(bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 40px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+  box-sizing:border-box;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #82ccdd;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+.conten1{
+ 
+  height: 500px;
+
+  background: url(bg.jpg);
+  background-size: cover;
+}
+.button{
+  top:50px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+
+
+
+  
+}
+
+.o{
+  
+  position: relative;
+  overflow: hidden;
+display: inline-block;
+width: 90px;
+height: 90px;
+background: rgb(255, 255, 255);
+margin:10px;
+border-radius: 20px 20px 20px 20px;
+box-shadow: 0px 2px 16px 0.3px #242424
+
+
+}
+
+.o i{
+  color: #5aa8f1;
+  font-size: 26px;
+  line-height: 90px;
+  transition: 0.3s linear;
+}
+.o:hover i{
+  
+  transform:rotate(360deg) scale(1.5) ;
+  color:rgb(255, 255, 255);
+}
+.o:hover {
+  box-shadow: 0px 2px 16px 0.3px #2ca8fa;
+  top:-9px;
+ 
+  
+ 
+}
+.o::before{
+  content: "";
+  position: absolute;
+  width:129%;
+  height:129%;
+  background: #5aa8f1;
+  transform: rotate(45deg);
+  left:-110%;
+  top:90%;
+}
+.o:hover::before{
+  animation: aaa 0.8s 1 ;
+  top:-10%;
+  left:-14%;
+}
+@keyframes aaa{
+  0%{
+    left:-110%;top:90%;
+
+  }
+  50% {left:4%; top:-30%;}
+  100%{top:-10%;left:-14%;}
+}
+
+
+@media screen and (max-width: 1000px) {
+  .service{
+    width: 50%;
+  }
+  .service-box{
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+    background: red;
+    transition:2s;
+  }
+
+  .service-box{
+    max-width: 100%;
+  }
+}

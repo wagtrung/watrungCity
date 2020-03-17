@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+<div class="container">
+
+    <div class="bm" data-file="ok"></div>
+
+</div>
+
+<div class="myimg">
+
+    <img src="mejjj.png" alt="">
+</div>
+
+<script src=" https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
+
+<script>
+
+    
+var bm = document.getElementsByClassName('bm');
+    
+    Array.prototype.forEach.call(bm, icon => {
+        
+        var anim = bodymovin.loadAnimation({
+            container: icon, 
+            path: `${icon.dataset.file}.json`,
+            renderer: 'canvas',
+            loop: true, 
+            autoplay: false
+        })
+
+        icon.addEventListener('mouseenter', () => {
+            anim.setDirection(1)
+            anim.play();
+        })
+        icon.addEventListener('mouseleave', () => {
+            anim.setDirection(-1)
+            anim.play();
+        })
+    })
+    
+    </script>
+
+
+</body>
+</html>

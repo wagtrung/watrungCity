@@ -1,0 +1,94 @@
+.card {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  min-width: 300px;
+  height: 10rem;
+  margin: .1rem;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: #3979B7;
+  overflow: hidden;
+}
+
+.card__icon {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 50px;
+  line-height: 2rem;
+  text-align: center;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.card__circle {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.2;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.card > p {
+  position: relative;
+  top: 50%;
+  margin: 0 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.card--alt-1 {
+  background-color: #7E3F82;
+}
+
+.card--alt-2 {
+  background-color: #39B764;
+}
+
+.card--alt-3 {
+  background-color: #CC3F82;
+}
+
+.card--alt-4 {
+  background-color: #EF7C2B;
+}
+
+.card:hover .card__circle {
+  -webkit-transform: scale(70);
+          transform: scale(70);
+  opacity: 0.8;
+}
+
+.card:hover > p,
+.card:hover .card__icon {
+  color: #45556E;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+/*# sourceMappingURL=kk.css.map */

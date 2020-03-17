@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  background: rgb(172, 70, 70);
+}
+
+.box {
+  border: 1px solid blue;
+  padding: ;
+}
+
+.box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 1;
+}
+
+.box-3 {
+  flex: 3;
+}
