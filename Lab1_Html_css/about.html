@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="StyleCSS/base.css">
+    <link rel="stylesheet" href="StyleCSS/style.css">
     <title>About</title>
 </head>
+
 <body>
 
 
     <section id="navBarContain">
         <div class="grid wide ">
             <div class="row navBar">
-                
-                    <a class="col l-3 myLogo" href="home.html">
-                    <span><Strong>Wag</Strong>Trung</span>
-                    </a>
-               
-                <div class="col l-6">
+
+                <a class="col l-3 myLogo " href="index.html">
+                    <img class="logoImg" src="img\e2.png" alt="">
+                </a>
+
+                <div class="col l-9">
                     <div class="navBox">
                         <ul class="navUl">
-
                             <li class="navLi">
                                 <a href="about.html" class="navA">About</a>
                             </li>
                             <li class="navLi">
-                                <a href="regist.html" class="navA">Registration</a>
+                                <a href="hobby.html" class="navA">Hobbies</a>
+                            </li>
+                            <li class="navLi " style="padding-right:20px">
+
+                                <a href="major.html" class="navA">Major</a>
+                                <span class="line"></span>
                             </li>
                             <li class="navLi">
-                                <a href="contact.html" class="navA">Contact</a>
+                                <a href="content.html" class="navA">Porfolio</a>
+                            </li>
+                            <li class="navLi ">
+                                <span class="Hot"></span>
+                                <a href="award.html" class="navA ">Awards</a>
                             </li>
                             <li class="navLi">
-                                <a href="content.html" class="navA">Content</a>
+                                <a href="service.html" class="navA">Services</a>
+                            </li>
+                            <li class="navLi">
+                                <a href="experience.html" class="navA">Experiences</a>
+                            </li>
+
+
+                            <li class="navLi btn btn-outline" style="margin-top:0">
+                                <a href="signIn.jsp" class="navA">Sign-In</a>
+                            </li>
+                            <li class="navLi btn" style="margin-top:0">
+                                <a href="regist.jsp" class="navA">Free Trial</a>
                             </li>
                         </ul>
                     </div>
@@ -43,27 +64,127 @@
         </div>
     </section>
 
-    <section id="About">
-
+    <section id="HomePage">
         <div class="grid wide ">
-            <div class="row home">
-                <div class="col l-5 ">
-                    <img src="img/homepageSvg.svg" alt="" class="homeIllustration">
+            <div class="row home cen">
+
+
+                <div class="col l-12 Tile">
+                    <div class="row cen">
+                        <div class="col l-3 l-o-2 ">
+                            <img src="img/me.png" alt="" class="homeIllustration">
+                        </div>
+                        <div class="col l-5  ">
+                            <div class="row cen ">
+                                <h2 style="margin-right:30px">About us</h2>
+                                <a href="#" class="btn">View my portfolio</a>
+                            </div>
+                            <p>We provide services of digital graphics and interface webpages to companies and
+                                corporations. Our
+                                strength is creativity and continuous effort for your brand.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="row myDetail">
+                        <div class="col l-12  space">
+                            <div class="row ">
+                                <div class="col l-3 l-o-1 ">
+                                    <h5 class="flex cen"><img style=" margin-right:20px" src="icon\user.svg" />
+                                        <b>Name</b></h5>
+                                    <h6>Ngo Quang Trung</h6>
+                                </div>
+                                <div class="col l-4 ">
+                                    <h5 class="flex cen"><img style=" margin-right:20px"
+                                            src="icon\cmt.svg" /><b>Email</b></h5>
+                                    <h6>nqt99design@gmail.com</h6>
+                                </div>
+                                <div class="col l-3 ">
+                                    <h5 class="flex cen"><img style=" margin-right:20px"
+                                            src="icon\phone.svg" /><b>Phone</b></h5>
+                                    <h6>(+84) 9380741##</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-12  space">
+                            <div class="row ">
+                                <div class="col l-3 l-o-1">
+                                    <h5 class="flex cen"><img style=" margin-right:20px"
+                                            src="icon\address.svg" /><b>Address</b></h5>
+                                    <h6>Binh Tan, HCM, VietNam</h6>
+                                </div>
+                                <div class="col l-4 ">
+                                    <h5 class="flex cen"><img style=" margin-right:20px"
+                                            src="icon\bar.svg" /><b>Study</b></h5>
+                                    <h6>International University <br>
+                                        VietNam National University
+                                    </h6>
+                                </div>
+                                <div class="col l-3 ">
+                                    <h5 class="flex cen"><img style=" margin-right:20px"
+                                            src="icon\pen.svg" /><b>Student-ID</b></h5>
+                                    <h6>ITITIU17087</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col l-12 space ">
+                            <h5 class="flex cen Separate"><img style=" margin-right:20px" src="icon\point.svg" /><b>Strength</b>
+                            </h5>
+                            <ul class="strengthUl">
+                                <li class="strengthLi">
+                                    <div class="flex cen dipo">
+                                        <div class="left">
+                                            <h6><b>Front-end Coding</b> </h6>
+                                            <h6>develop front-end landing pages, Responsive</h6>
+                                        </div>
+                                        <a class="btn" href="https://github.com/wagtrung"> wagtrung on Github</a>
+                                    </div>
+                                </li>
+                                <li class="strengthLi">
+                                    <div class="flex cen dipo">
+                                        <div class="left">
+                                            <h6><b>UI/UX Design</b> </h6>
+                                            <h6>implement interfaces on multive devices</h6>
+                                        </div>
+                                        <a class="btn" href="https://codepen.io/wagtrung"> wagtrung on CodePen</a>
+                                    </div>
+                                    
+                                </li>
+
+                                <li class="strengthLi">
+                                    <div class="flex cen dipo">
+                                        <div class="left">
+                                            <h6><b>Branding</b> </h6>
+                                            <h6>Design Branding package for your business</h6>
+                                        </div>
+                                        <a class="btn" href="#"> wagtrung on 99designs</a>
+                                    </div>
+                                </li>
+
+                                <li class="strengthLi">
+                                    <div class="flex cen dipo">
+                                        <div class="left">
+                                            <h6><b>Digital Graphics</b> </h6>
+                                            <h6>Design Digital content on social pages or on Printing</h6>
+                                        </div>
+                                        <a class="btn" href="#"> wagtrung on Behance</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
                 </div>
-
-                <div class="col l-7 Tile">
-                    <h2>About us</h2>
-                    <p>Lorem ipsum dolor sit amet, consectet Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium sapiente tempore eligendi accusamus ipsum ea fugiat itaque, excepturi, saepe in deserunt, odit doloribus repudiandae. Alias aliquid omnis quos est enim.
-                    </p>
-                    <a href="#" class="btn">View my project</a>
-                </div>
-
-                
-
-
-
             </div>
-        </div>
     </section>
 </body>
+
 </html>
