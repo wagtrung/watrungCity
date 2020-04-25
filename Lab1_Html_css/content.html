@@ -1,144 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="StyleCSS/base.css">
-        <link rel="stylesheet" href="StyleCSS/style.css">
-        <title>HomePage</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="StyleCSS/base.css">
+    <link rel="stylesheet" href="StyleCSS/style.css">
+    <title>HomePage</title>
+</head>
 
-    <body>
-        <section id="navBarContain">
-            <div class="grid wide ">
-                <div class="row navBar">
+<body>
+    <section id="navBarContain">
+        <div class="grid wide ">
+            <div class="row navBar">
 
-                    <a class="col l-3 myLogo" href="index.html">
-                        <span><Strong>Wag</Strong>Trung</span>
+                <a class="col l-3 myLogo " href="index.html">
+                    <img class="logoImg" src="img\e2.png" alt="">
+                </a>
+
+                <div class="col l-9">
+                    <div class="navBox">
+                        <ul class="navUl">
+                            <li class="navLi">
+                                <a href="about.html" class="navA">About</a>
+                            </li>
+                            <li class="navLi">
+                                <a href="hobby.html" class="navA">Hobbies</a>
+                            </li>
+                            <li class="navLi " style="padding-right:20px">
+
+                                <a href="major.html" class="navA">Major</a>
+                                <span class="line"></span>
+                            </li>
+                            <li class="navLi">
+                                <a href="content.html" class="navA">Porfolio</a>
+                            </li>
+                            <li class="navLi ">
+                                <span class="Hot"></span>
+                                <a href="award.html" class="navA ">Awards</a>
+                            </li>
+                            <li class="navLi">
+                                <a href="service.html" class="navA">Services</a>
+                            </li>
+                            <li class="navLi">
+                                <a href="experience.html" class="navA">Experiences</a>
+                            </li>
+
+
+                            <li class="navLi btn btn-outline" style="margin-top:0">
+                                <a href="signIn.jsp" class="navA">Sign-In</a>
+                            </li>
+                            <li class="navLi btn" style="margin-top:0">
+                                <a href="regist.jsp" class="navA">Free Trial</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="HomePage">
+
+        <div class="grid wide ">
+            <div class="row home cen">
+                <div class="col l-5 l-o-1">
+                    <img src="img/portfo.png" alt="" class="homeIllustration">
+                </div>
+                <div class="col l-6 Tile">
+                    <h2>Our Portfolio</h2>
+                    <p> a list of the product that i have worked up to now in the field of Design and Front-end
+                    </p>
+                    <a href="#Product" class="btn ">View Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Product">
+        <div class="grid  ">
+            <div class="row">
+                <div class="col l-12 flex">
+                    <h2 style="margin: auto; ">
+                        <span style="font-weight: 200;">Field Of</span>
+                        <b>Design</b></h2>
+                </div>
+                <div class="lineTile"></div>
+            </div>
+            <div class="row productSection">
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/sp1.png')"></div>
+                        </div>
+                        <h5 class="pTile">Desktop App</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">25nd April</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">UI/UX Design</span>
+                        </div>
                     </a>
-
-                    <div class="col l-6">
-                        <div class="navBox">
-                            <ul class="navUl">
-                                <li class="navLi">
-                                    <a href="about.html" class="navA">About</a>
-                                </li>
-                                <li class="navLi">
-                                    <a href="contact.html" class="navA">Contact</a>
-                                </li>
-                                <li class="navLi">
-                                    <a href="content.html" class="navA">Content</a>
-                                </li>
-                                <li class="navLi">
-                                    <a href="signIn.jsp" class="navA">SignIn</a>
-                                </li>
-                                <li class="navLi btn" style="margin-top:0">
-                                    <a href="regist.jsp" class="navA">Free Trial</a>
-                                </li>
-                            </ul>
+                </div>
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/sp2.jpg')"></div>
                         </div>
-                    </div>
+                        <h5 class="pTile">Moblie App</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">12nd Jan</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">UI/UX Design</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/sp3.jpg')"></div>
+                        </div>
+                        <h5 class="pTile">ARSON Brand</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">15nd Dec</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">Logo Design</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/sp4.jpg')"></div>
+                        </div>
+                        <h5 class="pTile">DRXN Brand</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">22nd Jun</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">Logo Design</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/sp5.jpg')"></div>
+                        </div>
+                        <h5 class="pTile">EL Lanyard</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">25nd April</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">Lanyard</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/sp6.jpg')"></div>
+                        </div>
+                        <h5 class="pTile">CSE Lanyard</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">25nd April</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">Logo Design</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/sp7.jpg')"></div>
+                        </div>
+                        <h5 class="pTile">VANDAL Show</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">9nd April</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">Banner Design</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/sp8.jpg')"></div>
+                        </div>
+                        <h5 class="pTile">Rose Poster</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">25nd April</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">Artwork Design</span>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </section>
-
-        <section id="HomePage">
-
-            <div class="grid wide ">
-                <div class="row home cen">
-                    <div class="col l-6 ">
-                        <img src="img/ContentSvg.svg" alt="" class="homeIllustration">
-                    </div>
-                    <div class="col l-6 Tile">
-                        <h2>What do we sell?</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adip
-                            Lorem ipsum dolor sit amet, consectetur adip
-                        </p>
-                        <a href="#Product" class="btn ">Click here to Shop now</a>
-                    </div>
+            <div class="row">
+                <div class="col l-12 flex">
+                    <a class=" more">See More ...</a>
                 </div>
             </div>
-        </section>
 
-        <section id="Product">
-           
 
-            <div class="grid wide ">
-                <div class="row">
-                    <div class="col l-12 flex">
-                        <h2 style="margin: auto">Our Products</h2>
-                    </div>
+
+            <!-- Field of coding -->
+            <div class="row">
+                <div class="col l-12 flex">
+                    <h2 style="margin: auto;margin-top:80px">
+                        <span style="font-weight: 200;">Field Of</span>
+                        <b>Coding</b></h2>
                 </div>
-                <div class="row productSection">
-
-                    <div class="col l-3 ">
-                        <div class="productBox">
-                            <h5 class="pTile">My product 1</h5>
-                            <p>product subtile</p>
+                <div class="lineTile"></div>
+            </div>
+            <div class="row productSection">
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/game1.jpg')"></div>
                         </div>
-                    </div>
-
-                    <div class="col l-3 ">
-                        <div class="productBox">
-                            <h5 class="pTile">My product 2</h5>
-                            <p>product subtile</p>
+                        <h5 class="pTile">Plants vs Zombie </h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">10nd May</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">Java</span>
                         </div>
-                    </div>
-
-                    <div class="col l-3 ">
-                        <div class="productBox">
-                            <h5 class="pTile">My product 3</h5>
-                            <p>product subtile</p>
+                    </a>
+                </div>
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/game2.png')"></div>
                         </div>
-                    </div>
-
-                    <div class="col l-3 ">
-                        <div class="productBox">
-                            <h5 class="pTile">My product 4</h5>
-                            <p>product subtile</p>
+                        <h5 class="pTile">2048 game</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">2nd Freb</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">Java</span>
                         </div>
-                    </div>
-
-                    <div class="col l-3 ">
-                        <div class="productBox">
-                            <h5 class="pTile">My product 5</h5>
-                            <p>product subtile</p>
+                    </a>
+                </div>
+                <div class="col l-3 ">
+                    <a href="#" class="productBox">
+                        <div class="a">
+                            <div class="c" style="background-image:url('img/game3.jpg')"></div>
                         </div>
-                    </div>
-
-                    <div class="col l-3 ">
-                        <div class="productBox">
-                            <h5 class="pTile">My product 6</h5>
-                            <p>product subtile</p>
+                        <h5 class="pTile">WagTrung Site</h5>
+                        <div class="flex dipo pSub">
+                            <span class="pDate"><img src="icon\date.svg" alt="" class="subIcon">11nd Dec</span>
+                            <span class="pType"><img src="icon\type.svg" alt="" class="subIcon">Front-end, Responsive</span>
                         </div>
-                    </div>
+                    </a>
+                </div>
 
-                    <div class="col l-3 ">
-                        <div class="productBox">
-                            <h5 class="pTile">My product 7</h5>
-                            <p>product subtile</p>
-                        </div>
-                    </div>
+            </div>
 
-                    <div class="col l-3 ">
-                        <div class="productBox">
-                            <h5 class="pTile">My product 8</h5>
-                            <p>product subtile</p>
-                        </div>
-                    </div>
-
+            <div class="row">
+                <div class="col l-12 flex">
+                    <a class=" more">See More ...</a>
                 </div>
             </div>
-        </section>
+
+
+        </div>
+
+
+
+
+    </section>
 
 
 
 
 
 
-    </body>
+</body>
 
 </html>
