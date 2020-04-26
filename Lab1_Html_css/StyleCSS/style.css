@@ -72,7 +72,11 @@ h1, h2, h3, h4, h5{
     padding: 10vh;
     display: flex;
   }
-
+  #Award{
+    background:#070320;
+    padding: 10vh;
+    display: flex;
+  }
   #Service{
     background: #ebebff;
     padding: 0 10vh 10vh;
@@ -380,8 +384,6 @@ input:focus{
 
 
 
-
-
 .highlight{
   display: inline;
   color: #ff8d00;
@@ -410,6 +412,8 @@ input:focus{
   padding:10px 0;
 }
 
+
+/* Product */
 .productSection{
 
   padding: 40px;
@@ -429,7 +433,6 @@ input:focus{
     align-items: center;
     transition: .4s;
 }
-
 .productBox:hover{
     transform: translate(0,-10px);
     cursor: pointer;
@@ -448,6 +451,30 @@ input:focus{
   overflow:hidden;
   display:flex;
 }
+.c{
+  width:100%;
+  padding-top:88%;
+  transition: 1.2s ease-in-out;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.pSub{
+  width: 100%;
+  padding: 2px 20px;
+  border-top: 2px solid #f7f7f7;
+}
+.pDate, .pType{
+  display:flex;
+  align-items: center;
+  color: #9c9c9c;
+font-size:.5em;
+}
+.subIcon{
+  margin-right: 5px;
+  width:19px;
+}
+/* end product */
 
 /* Service */
 .serviceBox{
@@ -467,7 +494,6 @@ input:focus{
   overflow:hidden;
   display:flex;
 }
-
 .cc{
   width:100%;
   transition: 1.2s ease-in-out;
@@ -480,16 +506,6 @@ input:focus{
 }
 .serviceBox:hover .cc{
 transform: scale(1.2);
-}
-
-
-.c{
-  width:100%;
-  padding-top:88%;
-  transition: 1.2s ease-in-out;
-  background-size:cover;
-  background-position:center center;
-  background-repeat:no-repeat;
 }
 .block{
   position: relative;
@@ -517,7 +533,6 @@ transform: scale(1.2);
     padding: 2px 0px;
     border-top: 2px solid #f7f7f7;
 }
-
 .serA{
   cursor: pointer;
     position: absolute;
@@ -530,25 +545,6 @@ transform: scale(1.2);
     font-family: 'roboto';
 }
 /* end Service */
-
-.pSub{
-  width: 100%;
-  padding: 2px 20px;
-  border-top: 2px solid #f7f7f7;
-}
-.pDate, .pType{
-  display:flex;
-  align-items: center;
-  color: #9c9c9c;
-font-size:.5em;
-}
-.subIcon{
-  margin-right: 5px;
-  width:19px;
-}
-
-
-
 
 
 .lineTile{
@@ -564,6 +560,101 @@ font-size:.5em;
     margin-bottom: -21px;
     background: #ebebff;
 }
+
+/* award */
+
+.myAward{
+  background: #f5fafe;
+  border-radius: 5px;
+  padding: 40px 20px;
+  margin: 40px 0;
+}
+.cupStick{
+  position: absolute;
+  width: 300px;
+  top:100px;
+  left: 60px;
+  animation:rota 1s infinite linear;
+}
+
+@keyframes rota{
+
+  0%{transform:rotate(10deg);}
+  50%{transform:rotate(-10deg) scale(1.1);}
+  100%{transform:rotate(10deg);}
+
+}
+
+.awardBox{
+  margin: 40px 40px;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 5px;
+  min-height: 200px;
+  background: white;
+  box-shadow: 0px 2px 5px 0 rgb(212, 231, 247), 1px 6px 31px 0 rgba(56,125,255,.1);
+  display: flex;
+  transition: .4s;
+  flex-direction: row;
+}
+
+.aaa{
+  width: 250px;
+  overflow:hidden;
+  display:flex;
+}
+.ccc{
+  width:100%;
+  transition: 1.2s ease-in-out;
+  background-size:cover;
+  background-position:center center;
+  background-repeat:no-repeat;
+}
+.awardBox:hover{
+  cursor: pointer;
+}
+.awardBox:hover .ccc{
+transform: scale(1.2);
+}
+.blockk{
+  position: relative;
+  padding:20px 30px 0;
+  flex:1;
+}
+.aTile{max-width:75%;
+  line-height: 1.4em;
+  margin: 0px;
+  font-family: 'roboto';
+    font-weight: 600;
+}
+.aSubTile{
+  overflow: hidden;
+  display: block;
+  margin-top: 20px;
+  max-height: 80px;
+  color: #9c9c9c;
+  font-size: .6em;
+  line-height: 1.8em;
+}
+.aSub{
+  position: absolute;
+    bottom: 4px;
+    width: 91%;
+    padding: 10px 0px;
+    border-top: 2px solid #f7f7f7;
+}
+.awardA {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: rgb(255, 255, 255);
+  font-family: roboto;
+  background: #00dd81;
+  border-radius: 0px 5px;
+  padding: 7px 20px;
+}
+/* end award */
 
 /* About */
 .myDetail{
